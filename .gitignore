@@ -1,0 +1,23 @@
+assignments
+demo
+*.code-workspace
+tutes*
+*-teaching.md
+
+# lect01
+lect02
+lect03
+lect04
+lect05
+lect06
+lect07
+lect08
+lect09
+lect10
+lect11
+lect12-error-handling
+
+# util
+wx-files
+wx-oop
+
