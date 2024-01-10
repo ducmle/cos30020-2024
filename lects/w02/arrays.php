@@ -17,6 +17,7 @@ $provinces =
 echo "Canada's smallest province is $provinces[1]", "<br/>", PHP_EOL;
 
 print("count(".'$provinces'.") = ". count($provinces). PHP_EOL."<br/>");
+echo PHP_EOL, 'print_r($provinces) = ', print_r($provinces), "<br/>";
 echo PHP_EOL, 'var_dump($provinces) = ', var_dump($provinces), "<br/>";
 
 $arrStr = print_r($provinces, true);

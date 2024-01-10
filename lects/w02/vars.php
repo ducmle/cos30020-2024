@@ -3,6 +3,8 @@
   // Camel-case naming convention for identifiers
   $thisVarIsValid = 1;
 
+  $creditPoints = 12.5;
+
   $var = 1;
   $Var = 2;
   println('$var = '.$var) ;
