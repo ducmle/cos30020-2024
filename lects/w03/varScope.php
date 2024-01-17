@@ -14,13 +14,13 @@
   $globalVariable = "Global variable";
   testScope();
   
-  echo "<div>$globalVariable</div>";
+  echo "<div>global variable: $globalVariable</div>";
   // error:
-  // echo "<div>$localVariable</div>";
+  echo "<div>local variable: $localVariable</div>";
 
   function counter() {
     $i = 0;
-    echo "<p>", $i++, "</p>";
+    echo "<p>", ++$i, "</p>";
   }
 
   echo "<p>Print counter</p>";

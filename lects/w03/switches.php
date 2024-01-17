@@ -18,4 +18,17 @@ switch ($var % 2) {
   default: // should never happen!
     echo "<div>impossible</div>";
   }
+
+  $fruit = $_GET["fruit"];
+  switch ($fruit) {
+    case "orange": 
+    case "banana":
+      echo "<div>price is $5!</div>";
+      break;
+    case "pineapple":
+      echo "<div>price is $10!</div>";
+      break;
+    default: // should never happen!
+      echo "<div>impossible fruit!</div>";
+    }  
 ?>

@@ -28,4 +28,22 @@
 
   $anotherAvg = averageNumbers(100,50,75);
   echo "averageNumbers(100,50,75) = ", $anotherAvg; 
+
+ /*
+  @requires $numbers is an array of numbers
+  @effects return the arithmetic average of the elements in $numbers
+  */
+  function average($numbers) {
+    $result = 0;
+    for($x = 0; $x < count($numbers); $x++) {
+      $result += $numbers[$x];
+    }
+
+    return $result / count($numbers);
+  }
+
+  $numbers = array(69,420,7000,1,2);
+  $avg = average($numbers);
+  $numbersAsStr = print_r($numbers, true);
+  echo "<p>the average of $numbersAsStr is: $avg</p>";
 ?>
