@@ -16,17 +16,24 @@
   $secondNameSoundsLike = metaphone($secondName);
 
   echo "<div>metaphone($firstName): $firstNameSoundsLike </div>";
+  echo "<div>metaphone($secondName): $secondNameSoundsLike </div>";
   
   if ($firstNameSoundsLike == $secondNameSoundsLike)
-    echo "<p>The names \"$firstName\", \"$secondName\" are pronounced the same.</p>";
+    echo "<div>\"$firstName\", \"$secondName\" are pronounced the same.</div>";
   else
-    echo "<p>The names \"$firstName\", \"$secondName\" are NOT pronounced the same.</p>";
+    echo "<div>\"$firstName\", \"$secondName\" are NOT pronounced the same.</div>";
+
+  echo "<p></p>";
 
   $soundexFirst = soundex($firstName);
   $soundexSecond = soundex($secondName);
+
+  echo "<div>soundex($firstName): $soundexFirst </div>";
+  echo "<div>soundex($secondName): $soundexSecond </div>";
+  echo "<div>soundex($firstName) == soundex($secondName): " . ($soundexFirst == $soundexSecond) . "</div>"
   ?>
 
-  <div><?= "soundex($firstName) == soundex($secondName): " . ($soundexFirst == $soundexSecond) ?></div>
+
 </body>
 
 </html>

@@ -62,29 +62,42 @@
 George H.W. Bush;Ronald Reagan;Jimmy Carter";
   echo '$presidents' . " = $presidents<br/>";
 
-  $tok = ";";   // "; .";
+  $tok = "; ";   // "; .";
+  echo "<br>Listing by using strtok('$tok'): <br>";
+
   $president = strtok($presidents, $tok);
   while ($president != NULL) {
-    echo "<b><i>$president</i></b><br/>";
+    echo "<i>$president</i><br/>";
     $president = strtok($tok);
   }
 
   echo "<p></p>";
 
   // split/explode
-  $tok = ";";
-  $presidentArray = explode($tok, $presidents);
+  $sep = ";";
+  echo "Listing by using string.explode('$sep'): <br>";
+  $presidentArray = explode($sep, $presidents);
   //how about "; " ???
   foreach ($presidentArray as $president) {
-    echo "$president<br />";
+    echo "<i>$president</i><br />";
   }
 
   echo "<p></p>";
 
   // implode
-  $presidents = implode("| ", $presidentArray);
+  $sep = "| ";
+  echo "Applying string.implode('$sep'): <br>";
+  $presidents = implode($sep, $presidentArray);
   echo $presidents, "<br/>";
-  ?>
+
+  // str_split
+  $wordLen = 5;
+  echo "<p>Applying str_split(length='$wordLen'): </p>";
+  $chars = str_split($presidents, $wordLen);
+  print_r($chars);
+?>
+
+
 </body>
 
 </html>
