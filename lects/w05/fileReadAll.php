@@ -7,6 +7,6 @@
     $entryArr = explode(", ", $entry);
     echo "<div><strong>" . ($i + 1)
     . ". </strong>";
-    echo "{$entryArr[0]}, {$entryArr[1]}<br />";
+    echo "{$entryArr[0]} | {$entryArr[1]}<br />";
   }
 ?>

@@ -12,6 +12,8 @@ $weatherFile = "data" . DIRECTORY_SEPARATOR . "sfweather.txt";
 // for now, assume that it exists
 if (is_writable($weatherFile)) {
   file_put_contents($weatherFile, $dailyForecast);
+  // use this for append
+  // file_put_contents($weatherFile, $dailyForecast, FILE_APPEND);
   echo "<p>The forecast information has been saved to
 the $weatherFile file.</p>";
 } else {
