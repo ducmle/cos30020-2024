@@ -11,7 +11,7 @@
 <body>
   <?php
   $firstName = "internet";
-  $secondName = "intranet";
+  $secondName = "nintranet";
   $firstNameSoundsLike = metaphone($firstName);
   $secondNameSoundsLike = metaphone($secondName);
 

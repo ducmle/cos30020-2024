@@ -62,7 +62,7 @@
 George H.W. Bush;Ronald Reagan;Jimmy Carter";
   echo '$presidents' . " = $presidents<br/>";
 
-  $tok = "; ";   // "; .";
+  $tok = ";";   // "; .";
   echo "<br>Listing by using strtok('$tok'): <br>";
 
   $president = strtok($presidents, $tok);

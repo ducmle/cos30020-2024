@@ -10,7 +10,7 @@
   <?php 
     $explorer = "Henry M. Stanley";
     // simple syntax
-    $saying = "\"Dr. Livingstone, I presume?\" asked $explorer.";
+    $saying = "\"Dr. Livingstone, I presume?\" asked {$explorer}s-and-somethingelse.";
     // single quote
     $saying2 = 'Dr. Livingstone, I presume? asked $explorer.';
 

@@ -26,7 +26,7 @@
 
   // another example: make this shorter!
   // $pattern = "/^\(\d\d\) \d\d\d\d-\d\d\d\d$/";
-  $pattern = "/^\(\d{2}\)\s\d{4}-\d{4}$/";
+  $pattern = "/^\(\d{1}\)\s\d{4}-\d{4}$/";
   $str = "(03) 9214-8000";
   $match = preg_match($pattern, $str);
   echo "<div>preg_match('$pattern', '$str'): ";

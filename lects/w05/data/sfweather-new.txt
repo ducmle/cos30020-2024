@@ -1,0 +1,5 @@
+<p><strong>San Francisco daily weather
+forecast</strong>: Today: Partly cloudy. Highs from the
+60s to mid 70s. West winds 5 to 15 mph. Tonight:
+Increasing clouds. Lows in the mid 40s to lower 50s.
+West winds 5 to 10 mph.</p>
