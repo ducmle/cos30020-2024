@@ -1,0 +1,9 @@
+test topic~test name~test message
+test topic 2~test name 2~test message 2
+test topic 3~test name 3~sadfa 
+test topic 2~duclm~fdbvdfb
+WAD~Duc~WAD is interesting!
+hello word 2022~Duc~COS30030 2022 hello!
+hello word August 2022~Duc Minh Le~August 2022
+a'a~a~a
+cos30020~Duc~good course unit
