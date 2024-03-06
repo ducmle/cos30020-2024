@@ -2,6 +2,7 @@ assignments
 demo
 *.code-workspace
 tutes*
+tutorials*
 *-teaching.md
 
 php
@@ -13,7 +14,7 @@ php
 # w05
 # w06
 # w07
-w08
+# w08
 w09
 w10
 w11

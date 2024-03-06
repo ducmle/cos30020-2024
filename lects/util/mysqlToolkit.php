@@ -193,6 +193,38 @@ function mysqlConnectFull() {
 }
 
 /** 
+ * Check if a table exists
+ * @param $dbConnect: connection object
+ * @param $tableName: name of the table in the target database to check
+ * 
+ * @effects return true if the table exists, otherwise return false
+*/
+function isTableExist($dbConnect, $tableName) {
+  $sql = "show tables like '".$tableName."'";
+  
+
+  return countResult($dbConnect, $sql) > 0;
+}
+
+/** 
+ * Count number of rows in a result.
+ * @param $dbConnect: connection object
+ * @param $sql: a query the returns some result
+ * 
+ * @effects return the number of rows in the result set of the specified sql, 0 if no result is found and false if execution failed
+*/
+function countResult($dbConnect, $sql) {
+  
+  $result = @mysqli_query($dbConnect, $sql);
+
+  if ($result === false) {
+    return false;
+  } else {
+    return mysqli_num_rows($result);
+  }
+}
+
+/** 
  * A generic method to process SQL result set (does not depend on knowledge of the table structure) 
  * @param $dbConnect: connection object
  * @param $sql: the SELECT sql to execute
