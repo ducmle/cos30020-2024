@@ -42,7 +42,7 @@ function main() {
       // UPDATE
         // "update inventory set price = 3000 where make like 'VinFast%'"
       // DELETE
-      "delete from inventory where quantity < 10"
+      "delete from inventory where quantity < 12"
     );
 
     readDataSimpleIndexed($dbConnect);
