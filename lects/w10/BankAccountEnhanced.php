@@ -28,6 +28,20 @@ class BankAccount {
     }
   }
 
+  public function __get($name) {
+    switch ($name) {
+      case "balance": 
+        return $this->balance; break;
+      case "accountNumber": 
+        return $this->accountNumber; break;
+      case "customerName": 
+        return $this->customerName; break;
+      default:
+        //echo "<br/>Error: invalid property: $name";
+        throw new RuntimeException("Error: invalid property: $name");
+    }
+  }
+
   // public function setBalance($newValue) {
   //   $this->balance = $newValue;
   // }

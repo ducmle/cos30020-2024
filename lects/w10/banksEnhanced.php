@@ -15,7 +15,8 @@ function main() {
       // enhanced: access property directly without set/get
       // old: $checking->setBalance(100);
       $checking->balance = 102;
-      echo "<p>Updated account balance: ". $checking->getBalance() . "</p>";
+      // echo "<p>Updated account balance: ". $checking->getBalance() . "</p>";
+      echo "<p>Updated account balance: ". $checking->balance . "</p>";
 
       echo "<p>object class: ".get_class($checking)."</p>";
 
@@ -25,7 +26,7 @@ function main() {
       $cash = 200;
       $checking->withdraw($cash);
       printf("<p>After withdrawing $%.2f, account balance: $%.2f.</p>",
-          $cash, $checking->getBalance());
+          $cash, $checking->balance);
 
       // serialisable
       echo "<p>BEFORE serialised: ". $checking->toString() ."</p>";
