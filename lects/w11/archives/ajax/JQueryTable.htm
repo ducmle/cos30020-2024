@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Address Book</title>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript">
+    function addressBookItem(fname, lname, email) {
+      this.fname = fname;
+      this.lname = lname;
+      this.email = email;
+    }
+    addressBookItem.prototype.write = function () {
+      var adrbook = "<tr><td>" + this.fname + "</td>";
+      adrbook += "<td>" + this.lname + "</td>";
+      adrbook += "<td>" + this.email + "</td></tr>";
+      document.write(adrbook);
+    }
+    //jquery
+    $(document).ready(function () {
+      // Handler for document.ready() called.
+      $("#appendRow").click(function () {
+        var firstName = prompt("Please enter the first name", "");
+        var lastName = prompt("Please enter the last name", "");
+        var email = prompt("Please enter the email address", "");
+        var newRow = $("<tr><td>" + firstName + "</td><td>" + lastName + "</td><td>" + email + "</td></tr>");
+        $("#addressBookTbl").append(newRow);
+        newRow.find('td').mouseover(function () {
+          $(this).css("fontSize", "30px");
+          $(this).css("color", "#ffffff");
+          $(this).css("backgroundColor", "#245919");
+        });
+        newRow.find('td').mouseout(function () {
+          $(this).css("fontSize", "14px");
+          $(this).css("color", "green");
+          $(this).css("backgroundColor", "#ffffff");
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var aB1 = new addressBookItem('Roger', 'Williams', 'rwilliams@gmail.com');
+    var aB2 = new addressBookItem('Rose', 'Schultz', 'rose_s@earthlink.net');
+    document.write("<table id=\"addressBookTbl\" border=\"2\"><tr><th>First Name</th><th>Last Name</th><th>Email Address</th></tr>");
+    aB1.write();
+    aB2.write();
+    document.write("</table>");
+  </script>
+  <br />
+  <input type="button" id="appendRow" value="append new row" />
+</body>
+
+</html>

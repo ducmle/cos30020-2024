@@ -1,0 +1,29 @@
+{ "class1": [
+    {
+      "classID": "CS115",
+      "department": "Computer Science",
+      "credits": 3,
+      "req": "yes",
+      "instructor" : "Adams",
+      "title" : "Programming Concepts"
+     },
+     {
+      "classID": "CS205",
+      "semester": "fall",
+      "department": "Computer Science",
+      "credits": 3,
+      "req": "yes",
+      "instructor" : "Dykes",
+      "title" : "JavaScript"
+     },
+     {
+      "classID": "CS255",
+      "semester": "fall",
+      "department": "Computer Science",
+      "credits": 3,
+      "req": "no",
+      "instructor" : "Brunner",
+      "title" : "Java"
+      }
+     ]
+}

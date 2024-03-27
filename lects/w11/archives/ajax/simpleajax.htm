@@ -1,0 +1,21 @@
+<HTML XMLns="http://www.w3.org/1999/xHTML">
+
+<head>
+  <title>A Simple Ajax Example</title>
+  <script src="https://ajax.microsoft.com/ajax/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="simpleajax.js"> </script>
+</head>
+
+<body>
+  <H1>Fetching data with Ajax &nbsp;</H1>
+  <form>
+    <label>User Name: <input type="text" name="namefield"></label>
+    <label><br>Password: <input type="text" name="pwdfield"><br><br> </label>
+    <input name="submit" type="button" onClick="getData('data.php', namefield.value, pwdfield.value)" value="Fetch">
+  </form>
+  <div id="response">
+    <!-- Our message will be echoed out here -->
+  </div>
+</body>
+
+</HTML>
